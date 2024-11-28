@@ -1,0 +1,167 @@
+body{
+  background-image: url(fondo4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+/*Barra lateral*/
+nav {
+    width: 200px;
+    background-color: #3a506b;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+  }
+  
+  nav ul li i {
+    margin-right: 10px;
+    color: white;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  nav ul li.active {
+    background-color: #1c2a3a;
+    color: white;
+  }
+  
+  .p-3{
+    margin-left: 200px;
+    padding: 20px;
+    will-change: calc(100%-200px);
+  }
+  
+  /*Contenido*/
+  table tr td{
+    vertical-align: middle;
+  }
+  
+  td button{
+    margin: 5px;
+  }
+  
+  td button i{
+    font-size: 20px;
+  }
+  
+  
+  .modal-header{
+    background: #3a506b;
+    color: #fff;
+  }
+  
+  .modal-body form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+  
+  .modal-body form .imgholder{
+    width: 100%px;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .imgholder .upload{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .upload i{
+    color: #fff;
+    font-size: 35px;
+  }
+  
+  .imgholder:hover .upload{
+    display: flex;
+  }
+  
+  .imgholder .upload input{
+    display: none;
+  }
+  
+  .modal-body form .inputField{
+    flex-basis: 100%;
+    border-left: 5px groove #3a506b;
+    padding-left: 20px;
+  }
+  
+  form .inputField > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  form .inputField > div label{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  #userForm form .inputField > div label::after{
+    content: "*";
+    color: red;
+  }
+  
+  form .inputField > div input{
+    width: 70%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #3a506b;
+  }
+  
+  .modal-footer .submit{
+    font-size: 18px;
+  }
+  
+  
+  #readData form .inputField > div input{
+    color: #000;
+    font-size: 18px;
+  }
+  
+  
+  .bienvenida{
+    text-align: center;
+    color: #3a506b;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  

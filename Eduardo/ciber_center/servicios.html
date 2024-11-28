@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios a su disposición</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="servicios.css" />
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <!-- Aqui empieza la Barra de navegacion con Bootstrap -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <img src="lopng.png" class="logo d-none d-lg-block" alt="logo" width="100px" />
+    <img src="lopng.png" class="logo d-block d-lg-none" alt="logo" width="50px" />
+    
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="conocenos.html">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mg-lg-20" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="contactanos.html">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="papeleria.html">Papelería</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Botón de Iniciar Sesión -->
+    <a href="login.html" class="login-button d-none d-lg-inline" id="login-link">Iniciar sesión</a>
+    <a href="login.html" class="login-button d-inline d-lg-none" id="login-link" style="font-size: 0.8em;">Iniciar sesión</a>
+
+    <!-- Botón de Toggle para Offcanvas -->
+    <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<!-- Aqui termina la barra de navegacion -->
+<!--Contenido -->
+
+<!--Contenido servicios de ciber-->
+<div class="Serviciosciber">
+  <p class="SC">Servicios de ciber</p>
+  <p class="TextSc">Ofrecemos una amplia gama de servicios para satisfacer todas tus necesidades tecnológicas. Estos servicios de ciber solo estan disponibles en tienda fisica</p>
+</div>
+<!--Tarjetas servicio de ciber-->
+<div class="cards-container">
+  <div class="card" style="width: 17rem;">
+    <img src="internetimg.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Acceso a internet de alta velocidad</h5>
+      <p class="card-text">Navega, trabaja,y estudia con una conexión rápida y confiable.</p>
+      <a href="contactanos.html" class="btn btn-primary" >Contáctanos</a>
+    </div>
+  </div>
+  <div class="card" style="width: 17rem;">
+    <img src="impresion2.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Impresión y escaneo de documentos</h5>
+      <p class="card-text">Imprime y escanea tus documentos con calidad profesional.</p>
+      <a href="contactanos.html" class="btn btn-primary">Contáctanos</a>
+    </div>
+  </div>
+  <div class="card" style="width: 17rem;">
+    <img src="renta.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Renta de equipo de computo</h5>
+      <p class="card-text"> Equipos modernos y de alta calidad para tus necesidades de trabajo.</p>
+      <a href="contactanos.html" class="btn btn-primary">Contáctanos</a>
+    </div>
+  </div>
+</div>
+
+<!--Termina contenido-->
+
+<!--Contenido articulos papeleria-->
+
+<div class="Serviciospapeleria">
+  <p class="SP">Artículos de papelería</p>
+  <p class="textSp">En nuestra tienda, encontrarás una amplia variedad de productos de papelería diseñados para satisfacer todas tus necesidades, ofrecemos todo lo que necesitas para mantenerte organizado y productivo.</p>
+</div>
+<!--Tarjetasss-->
+
+<div class="cards-container">
+  <div class="card" style="width: 15rem;">
+    <img src="cuaderno.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cuadernos y blocks de notas</h5>
+      <p class="card-text">Organiza tus ideas con estilo y calidad. Perfectos para cualquier ocasión.      </p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papeleria</a>
+    </div>
+  </div>
+  <div class="card" style="width: 15rem;">
+    <img src="lapices,lapiceros.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Lápices, lapiceros y marcadores</h5>
+      <p class="card-text">Encuentra la mejor calidad para escribir, dibujar y marcar. Perfectos para todas tus necesidades.
+      </p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papelería</a>
+    </div>
+  </div>
+  <div class="card" style="width: 15rem;">
+    <img src="folders.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Folders y organizadores</h5>
+      <p class="card-text">Mantén tus documentos en orden, calidad y funcionalidad para tu oficina o estudio.</p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papelería</a>
+    </div>
+  </div>
+  <div class="card" style="width: 15rem;">
+    <img src="dibujo.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pintura y artículos de dibujo</h5>
+      <p class="card-text">Explora nuestra gama de materiales de dibujo de alta calidad</p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papelería</a>
+    </div>
+  </div>
+  <div class="card" style="width: 15rem;">
+    <img src="utiles.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Variedad de útiles escolares</h5>
+      <p class="card-text">Encuentra todo lo que necesites para tus trabajos escolares</p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papelería</a>
+    </div>
+  </div>
+</div>
+<!--TERMINA AQUI-->
+
+<!--Contenido suministros de oficina-->
+<div class="Suministros">
+  <p class="SO">Suministros de oficina</p>
+  <p class="textSO">Encuentra todo lo que necesitas para tu espacio de trabajo. Desde bolígrafos y papel hasta organizadores y equipos de oficina, tenemos la mejor calidad para mantener tu oficina funcionando sin problemas.
+  </p>
+</div>
+
+<!--Tarjetaas-->
+
+<div class="cards-container">
+  <div class="card" style="width: 15rem;">
+    <img src="grapa.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Grapadoras y perforadoras</h5>
+      <p class="card-text">Todo lo que necesitas para mantener tu oficina en orden y tus proyectos en marcha
+      </p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papeleria</a>
+    </div>
+  </div>
+  <div class="card" style="width: 15rem;">
+    <img src="cinta.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Cintas adhesivas y pegamentos</h5>
+      <p class="card-text">Soluciones rápidas y efectivas para todas tus necesidades de fijación y reparación.</p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papelería</a>
+    </div>
+  </div>
+  <div class="card" style="width: 15rem;">
+    <img src="engargolado.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Engargolados y enmicados</h5>
+      <p class="card-text">Protege y organiza tus documentos.Calidad y durabilidad garantizadas para tus proyectos.</p>
+      <a href="papeleria.html" class="btn btn-primary">Ir a papelería</a>
+    </div>
+  </div>
+</div>
+<!--Aqui termina-->
+<!--Pie de pagina-->
+<footer id="footer" class="bg-blue text-white pt-5 pb-4">
+  <div class="conteiner text-center text-md-start">
+    <div class="row text-center text-md-start">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-wight-bold text-white">
+          Nosotros
+        </h5>
+        <hr class="mb-4" />
+        <p>
+          “Somos una empresa dedicada al servicio de papelería y centro de ciber con más de 10 años de experiencia, ofreciendo productos y servicios de alta calidad.”
+        </p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5
+          class="text-uppercase mb-4 font-wight-bold text-primary text-white"
+        >
+          Otros links
+        </h5>
+        <hr class="mb-4" />
+        <p>
+          <a href="index.html" class="text-white text-decoration-none">Inicio</a>
+        </p>
+        <p>
+          <a href="conocenos.html" class="text-white text-decoration-none">Conócenos</a>
+        </p>
+        <p>
+          <a href="contactanos.html" class="text-white text-decoration-none">Contáctanos</a>
+        </p>
+        <p>
+          <a href="papeleria.html" class="text-white text-decoration-none">Papelería</a>
+        </p>
+      </div>
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-wight-bold text-white">
+          Contáctanos
+        </h5>
+        <hr class="mb-4" />
+        <p>
+          <li class="fas fa-home me-3"></li>
+          Córdoba,Veracruz.
+        </p>
+        <p>
+          <li class="fas fa-envelope me-3"></li>
+          cibercenter@gmail.com
+        </p>
+        <p>
+          <li class="fas fa-phone me-3"></li>
+          2717262678
+        </p>
+      </div>
+
+      <hr class="mb-4" />
+      <div class="text-center mb-2">
+        <p>
+          Copyright &copy;2024 Todos los derechos reservados
+          <strong class="text-white">Ciber center</strong>
+        </p>
+      </div>
+
+      <div class="text-center">
+        <ul class="list-unstyled list-inline">
+          <li class="list-inline-item">
+            <a
+              href="https://www.facebook.com/profile.php?id=61561154961438&mibextid=ZbWKwL"
+              class="text-white"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.instagram.com/ciber.center?igsh=MXRwNnYxdHF5dDhlcw=="
+              class="text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!--Termina pie de pagina-->
+
+
+<!--Termina contenido de la pagina-->
+      
+
+<script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Termina pie de pagina-->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+    
+</body>
+</html>

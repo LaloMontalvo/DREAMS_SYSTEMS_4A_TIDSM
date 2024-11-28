@@ -1,0 +1,245 @@
+body {
+    background-image: url(fondo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #f0f4f8;
+    height: 100px;
+    margin: 30px;
+    border-radius: 16px;
+    padding: 0.2rem;
+    border: #3a506b solid 2px;
+  }
+  
+  /* Botón de iniciar sesión */
+  .login-button {
+    background-color: #3a506b;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  /* Hover en el botón de iniciar sesión */
+  .login-button:hover {
+    background-color: #273547;
+  }
+  
+  /* Botón de toggler para offcanvas */
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,
+  .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  /* Enlaces de navegación */
+  .nav-link {
+    color: #29292e;
+    font-weight: 500;
+    position: relative;
+    font-size: larger;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #3a506b;
+  }
+  
+  /* Efecto hover en enlaces de navegación para pantallas grandes */
+  @media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #3a506b;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+  
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 50px;
+        visibility: visible;
+        background-color: #3a506b;
+    }
+  }
+  
+  /* Ajustar el tamaño del logo en diferentes puntos de quiebre */
+  @media (max-width: 576px) {
+    .logo {
+        width: 50px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 992px) {
+    .logo {
+        width: 105px;
+    }
+  }
+  
+  /* Ajustar el tamaño del botón de iniciar sesión en diferentes puntos de quiebre */
+  @media (max-width: 576px) {
+    .login-button {
+        font-size: 1.8em;
+        padding: 6px 16px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 992px) {
+    .login-button {
+        font-size: 1.9em;
+        padding: 7px 18px;
+    }
+  }
+  
+  /*Aqui termina la barra de navegacion*/
+  
+  .auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-container {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}
+
+.auth-input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.auth-divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.auth-divider span::before {
+    content: 'o';
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 0.5rem;
+    color: #666;
+}
+
+.auth-social-login button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.auth-google-login {
+    background-color: #db4437;
+    color: #fff;
+}
+
+.auth-facebook-login {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.auth-social-login button:hover {
+    opacity: 0.8;
+}
+
+.auth-error-message {
+    color: #d9534f;
+    margin-top: 1rem;
+}
+
+
+ /*Comienza el pie de pagina */ 
+
+ a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+p{
+    font-size: 17px;
+}
+
+a:hover{
+    color: black !important;
+}
+
+i{
+    font-size: 25px;
+}
+
+#footer{
+    background-color: #3a506b;
+    margin-top: 50px;
+}

@@ -1,0 +1,254 @@
+body{
+    background-image: url(fondo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+/* Barra de navegación */
+.navbar {
+  background-color: #f0f4f8;
+  height: 100px;
+  margin: 30px;
+  border-radius: 16px;
+  padding: 0.2rem;
+  border: #3a506b solid 2px;
+}
+
+/* Botón de iniciar sesión */
+.login-button {
+  background-color: #3a506b;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+/* Hover en el botón de iniciar sesión */
+.login-button:hover {
+  background-color: #273547;
+}
+
+/* Botón de toggler para offcanvas */
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Enlaces de navegación */
+.nav-link {
+  color: #29292e;
+  font-weight: 500;
+  position: relative;
+  font-size: larger;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #3a506b;
+}
+
+/* Efecto hover en enlaces de navegación para pantallas grandes */
+@media (min-width: 991px) {
+  .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #3a506b;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+      width: 50px;
+      visibility: visible;
+      background-color: #3a506b;
+  }
+}
+
+/* Ajustar el tamaño del logo en diferentes puntos de quiebre */
+@media (max-width: 576px) {
+  .logo {
+      width: 50px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .logo {
+      width: 105px;
+  }
+}
+
+/* Ajustar el tamaño del botón de iniciar sesión en diferentes puntos de quiebre */
+@media (max-width: 576px) {
+  .login-button {
+      font-size: 1.8em;
+      padding: 6px 16px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .login-button {
+      font-size: 1.9em;
+      padding: 7px 18px;
+  }
+}
+
+/*Aqui termina la barra de navegacion*/
+
+/*Esto es el pie de pagina*/
+
+a {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+p{
+  font-size: 17px;
+}
+
+a:hover{
+  color: black !important;
+}
+
+i{
+  font-size: 25px;
+}
+
+#footer{
+  background-color: #3a506b;
+}
+
+
+/*Termina pie de pagina*/
+
+/*Empieza texto quienes somos*/
+  .conocenos {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .quienes{
+    font-size: 2rem;
+    color: #3a506b;
+  }
+
+  .parrafo{
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: justify;
+  }
+.parra1{
+  justify-content: center;
+  text-align: center;
+  font-size: 1.6rem;
+  color: black;
+}
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .conocenos {
+      padding: 15px;
+      margin: 5px;
+    }
+    .quienes{
+      font-size: 1.6rem;
+    }
+
+    .parra1{
+      font-size: 1.2rem;
+    }
+    .parrafo{
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .conocenos {
+      padding: 10px;
+      margin: 2px;
+    }
+
+    .parra1{
+      font-size: 1rem;
+    }
+    .quienes{
+      font-size: 1.3rem;
+    }
+    .parrafo{
+      font-size: 1rem;
+    }
+  }
+  
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .imagenes {
+    padding-top: 0;
+    background-color: rgba(255, 255, 255, 0.3); 
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  .imagenes p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .imagenes img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .imagenes {
+      padding: 15px;
+      margin: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .imagenes {
+      padding: 10px;
+      margin: 2px;
+    }
+  }
+  
+  .img1{
+    width: 600px;
+    height: 150px;
+  }
+
+  .img2{
+    width: 600px;
+    height: 150px;
+  }

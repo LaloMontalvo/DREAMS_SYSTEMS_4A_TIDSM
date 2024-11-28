@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+}
+body {
+  background-image: url(fondo4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #f0f4f8;
+    height: 100px;
+    margin: 30px;
+    border-radius: 16px;
+    padding: 0.2rem;
+    border: #3a506b solid 2px;
+  }
+  
+  /* Botón de iniciar sesión */
+  .login-button {
+    background-color: #3a506b;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  /* Hover en el botón de iniciar sesión */
+  .login-button:hover {
+    background-color: #273547;
+  }
+  
+  /* Botón de toggler para offcanvas */
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,
+  .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  /* Enlaces de navegación */
+  .nav-link {
+    color: #29292e;
+    font-weight: 500;
+    position: relative;
+    font-size: larger;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: #3a506b;
+  }
+  
+  /* Efecto hover en enlaces de navegación para pantallas grandes */
+  @media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #3a506b;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+  
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 50px;
+        visibility: visible;
+        background-color: #3a506b;
+    }
+  }
+  
+  /* Ajustar el tamaño del logo en diferentes puntos de quiebre */
+  @media (max-width: 576px) {
+    .logo {
+        width: 50px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 992px) {
+    .logo {
+        width: 105px;
+    }
+  }
+  
+  /* Ajustar el tamaño del botón de iniciar sesión en diferentes puntos de quiebre */
+  @media (max-width: 576px) {
+    .login-button {
+        font-size: 1.8em;
+        padding: 6px 16px;
+    }
+  }
+  
+  @media (min-width: 577px) and (max-width: 992px) {
+    .login-button {
+        font-size: 1.9em;
+        padding: 7px 18px;
+    }
+  }
+  
+  /*Aqui termina la barra de navegacion*/
+  
+/*Papeleriaaaaa*/
+header {
+    background-position: center;
+    height: 100px;
+    margin: 50px;
+}
+
+header h4 {
+    text-align: center;
+    font-size: 50px;
+    color: #3a506b;
+    padding: 30px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.productos {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas por fila */
+    gap: 20px;
+    justify-items: center;
+}
+
+.producto, .productoc {
+    background-color: #3a506b;
+    border: 3px solid rgba(255, 255, 255, 0.5); /* Borde blanco transparente */
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Añadido color a la transición */
+    width: 100%; /* Ajuste automático del ancho */
+    max-width: 250px; /* Ancho máximo */
+    height: auto; /* Ajuste automático de la altura */
+}
+
+.producto a, .productoc a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.producto img, .productoc img {
+    width: 100%;
+    height: auto;
+}
+
+.producto p, .productoc p {
+    font-size: 1.5vw; /* Tamaño de fuente relativo al ancho de la ventana */
+}
+
+.producto:hover, .productoc:hover {
+    transform: scale(1.1);
+    background-color: white; /* Fondo blanco más opaco al pasar el ratón */
+    color: #000; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+    .productos-grid {
+        grid-template-columns:repeat(5, 1fr), minmax(150px, 1fr);
+    }
+    .producto p, .productoc p {
+        font-size: 2vw; /* Ajuste del tamaño de fuente para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: repeat(5, 1fr, minmax(100px, 1fr));
+    }
+    .producto p, .productoc p {
+        font-size: 2vw; /* Ajuste del tamaño de fuente para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-grid {
+        grid-template-columns: 1fr; /* Apilar los divs uno debajo del otro */
+    }
+    .producto p, .productoc p {
+        font-size: 5vw; /* Ajuste del tamaño de fuente para pantallas muy pequeñas */
+    }
+}
+
+ /*Comienza el pie de pagina */ 
+
+ a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+p{
+    font-size: 17px;
+}
+
+a:hover{
+    color: black !important;
+}
+
+i{
+    font-size: 25px;
+}
+
+#footer{
+    background-color: #3a506b;
+}
+

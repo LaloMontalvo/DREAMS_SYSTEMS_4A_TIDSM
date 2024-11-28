@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo y arte</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="cuaderno.css" />
+    <link rel="stylesheet" href="https://icons.getbootstrap.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <!-- Aqui empieza la Barra de navegacion con Bootstrap -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <img src="lopng.png" class="logo d-none d-lg-block" alt="logo" width="100px" />
+    <img src="lopng.png" class="logo d-block d-lg-none" alt="logo" width="50px" />
+    
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="conocenos.html">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="contactanos.html">Contáctanos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active mg-lg-20" href="#">Dibujo y arte</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mg-lg-20" href="papeleria.html"> Regresar a papelería</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="search-container" id="buscador">
+      <input type="text" id="searchInput" placeholder="Buscar productos...">
+  </div>
+
+    <!-- Botón de Toggle para Offcanvas -->
+    <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<!-- Aqui termina la barra de navegacion -->
+
+
+<!---Contenido de la pagina-->
+<header>
+    <h4>Dibujo y arte</h4>
+</header>
+<section class="contenedor">
+  <!-- Contenedor de elementos -->
+  <div class="contenedor-items">
+      <div class="item">
+          <span class="titulo-item">Lapices de colores 24 pzas bic</span>
+          <img src="colores.jpeg" alt="" class="img-item">
+          <span class="precio-item">$135.00</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+          <span class="titulo-item">Lapices de colores 36 pzas Crayola</span>
+          <img src="lapices_crayola.jpg" alt="" class="img-item">
+          <span class="precio-item">$235.50</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+          <span class="titulo-item">Lapices de colores 12 pzas crayola </span>
+          <img src="lapices_crayola12.webp" alt="" class="img-item">
+          <span class="precio-item">$120.00</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+          <span class="titulo-item">Lapices de colores 48 pzas prisma color</span>
+          <img src="lapices_prismacolor.webp" alt="" class="img-item">
+          <span class="precio-item">$255.50</span>
+          <button class="boton-item">Agregar al Carrito</button>
+      </div>
+      <div class="item">
+        <span class="titulo-item">Lapices de colores 13 pzas vividel</span>
+        <img src="lapices_vividel.webp" alt="" class="img-item">
+        <span class="precio-item">$99.00</span>
+        <button class="boton-item">Agregar al Carrito</button>
+    </div>
+    <div class="item">
+      <span class="titulo-item">Lapices de colores 15 pzas norma</span>
+      <img src="lapices_norma.jpeg" alt="" class="img-item">
+      <span class="precio-item">$149.50</span>
+      <button class="boton-item">Agregar al Carrito</button>
+  </div>
+  <div class="item">
+    <span class="titulo-item">Lapices de colores 12 pzas prisma color</span>
+    <img src="lapices_prismacolor12.webp" alt="" class="img-item">
+    <span class="precio-item">$119.00</span>
+    <button class="boton-item">Agregar al Carrito</button>
+</div>
+<div class="item">
+  <span class="titulo-item">Pintura bombin vinilica naranja 1 pza</span>
+  <img src="bombin_naranja.png" alt="" class="img-item">
+  <span class="precio-item">$32.00</span>
+  <button class="boton-item">Agregar al Carrito</button>
+</div>
+<div class="item">
+  <span class="titulo-item">Pintura bombin vinilica azul 1 pza</span>
+  <img src="bombin_azul.png" alt="" class="img-item">
+  <span class="precio-item">$32.00</span>
+  <button class="boton-item">Agregar al Carrito</button>
+</div>
+<div class="item">
+  <span class="titulo-item">Pinceles punta angular 1 unidad</span>
+  <img src="pinceles.jpeg" alt="" class="img-item">
+  <span class="precio-item">$10.00</span>
+  <button class="boton-item">Agregar al Carrito</button>
+</div>
+  </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+            <!-- 
+            <div class="carrito-item">
+                <img src="img/boxengasse.png" width="80px" alt="">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Box Engasse</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    </div>
+                    <span class="carrito-item-precio">$15,000</span>
+                </div>
+               <span class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+               </span>
+            </div>
+            <div class="carrito-item">
+                <img src="img/skinglam.png" width="80px" alt="">
+                <div class="carrito-item-detalles">
+                    <span class="carrito-item-titulo">Skin Glam</span>
+                    <div class="selector-cantidad">
+                        <i class="fa-solid fa-minus restar-cantidad"></i>
+                        <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                        <i class="fa-solid fa-plus sumar-cantidad"></i>
+                    </div>
+                    <span class="carrito-item-precio">$18,000</span>
+                </div>
+               <button class="btn-eliminar">
+                    <i class="fa-solid fa-trash"></i>
+               </button>
+            </div>
+             -->
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+     
+    
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="cuaderno.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+    
+</body>
+</html>
